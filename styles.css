@@ -245,19 +245,31 @@ header nav a:hover {
     text-align: center;
 }
 
+.contact h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
 .contact form {
     max-width: 600px;
     margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.contact input, .contact textarea {
+.contact input,
+.contact textarea {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
     border-radius: 5px;
-    border: none;
+    border: 1px solid #ddd;
     font-size: 1rem;
     margin-bottom: 20px;
+    color: #333;
 }
 
 .contact button {
@@ -275,61 +287,24 @@ header nav a:hover {
     background-color: #1C4D9D;
 }
 
-/* Footer Section */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #1E3A8A;
-    color: white;
-}
-
-/* Responsive Design for Smaller Screens */
+/* For smaller screens (phones) */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
+    .contact {
+        padding: 30px 20px; /* Reduce padding on mobile */
     }
 
-    header nav {
-        display: none; /* Hide nav links by default */
-        width: 100%;
+    .contact h2 {
+        font-size: 1.8rem; /* Smaller heading size on mobile */
+        margin-bottom: 15px;
     }
 
-    header .hamburger {
-        display: block;
-    }
-}
-
-/* For mobile devices */
-@media (max-width: 480px) {
-    .hero h2 {
-        font-size: 2rem;
+    .contact form {
+        padding: 15px; /* Reduce padding inside the form */
+        width: 90%; /* Make form take up more width on mobile */
     }
 
-    .hero p {
-        font-size: 0.9rem;
-    }
-
-    .about-content .title {
-        font-size: 2rem;
-    }
-
-    .about-content .subtitle {
-        font-size: 1rem;
-    }
-
-    .cta-button {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-    }
-
-    .contact input, .contact textarea, .contact button {
-        font-size: 0.9rem;
-    }
-
-    footer {
-        font-size: 0.9rem;
-    }
-}
-
+    .contact input,
+    .contact textarea {
+        font-size: 0.9rem; /* Smaller font size for inputs */
+        padding: 10px; /* Reduce padding in inputs */
+        marg
