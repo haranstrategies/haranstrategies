@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started | Haran Strategies</title>
+    <style>
+        /* Basic Reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            scroll-behavior: smooth;
+            color: #333;
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, #4a90e2, #357ABD);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 0;
+        }
+
+        /* Main Section */
+        main {
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        main h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #4a90e2;
+        }
+        main p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Form Section */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            max-width: 600px;
+            padding: 15px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form select {
+            appearance: none; /* Removes default styling for consistency */
+            background-color: #fff;
+            background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%23333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpath d="M6 9l6 6 6-6"%3E%3C/path%3E%3C/svg%3E');
+            background-repeat: no-repeat;
+            background-position: calc(100% - 10px) center;
+            background-size: 15px;
+            cursor: pointer;
+            padding-right: 35px; /* Added to make space for the arrow */
+        }
+        form select:focus {
+            border-color: #4a90e2;
+            outline: none;
+            box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+        }
+        form textarea {
+            resize: none;
+        }
+        form button {
+            padding: 15px 40px;
+            font-size: 1.2em;
+            border: none;
+            background: #4a90e2;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        form button:hover {
+            background: #357ABD;
+        }
+
+        /* Footer Section */
+        footer {
+            background: #2b3a4a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Get Started with Haran Strategies</h1>
+        <p>Take the first step toward growing your business online.</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Tell Us About Your Business</h2>
+        <p>We’d love to learn more about your business and how we can help. Fill out the form below to get started, and our team will reach out to you within 24 hours.</p>
+
+        <!-- Get Started Form -->
+        <form  action="https://formsubmit.co/haranstrategies@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <select name="service" id="service" required>
+                <option value="" disabled selected>Select a Service</option>
+                <option value="SEO">SEO</option>
+                <option value="webdevelopment">Web Development</option>
+                <option value="socialmediamarketing">Social Media Marketing</option>
+            </select>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="business" placeholder="Business Name" required>
+            <textarea 
+                name="message" 
+                id="message" 
+                placeholder="Tell us about your goals or challenges..." 
+                rows="5" 
+                required>
+            </textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Haran Strategies. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const serviceSelect = document.getElementById('service');
+            const messageTextarea = document.getElementById('message');
+
+            serviceSelect.addEventListener('change', () => {
+                if (serviceSelect.value === 'webdevelopment') {
+                    messageTextarea.placeholder = 'Describe the type of website or functionality you need...';
+                } else if (serviceSelect.value === 'SEO') {
+                    messageTextarea.placeholder = 'Share your goals for SEO, such as ranking keywords or increasing traffic...';
+                } else if (serviceSelect.value === 'socialmediamarketing') {
+                    messageTextarea.placeholder = 'Tell us about your target audience or campaign ideas...';
+                } else {
+                    messageTextarea.placeholder = 'Tell us about your goals or challenges...';
+                }
+            });
+        });
+    </script>
+</body>
+</html>     
