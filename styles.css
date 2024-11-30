@@ -241,7 +241,7 @@ header nav a:hover {
 /* Contact Section Inputs */
 .contact input,
 .contact textarea {
-    width: 90%; /* Reduce width to make it smaller */
+    width: 85%; /* Reduce width to make it smaller */
     padding: 10px; /* Reduce padding for smaller inputs */
     margin: 10px auto; /* Center inputs within the form */
     border-radius: 5px;
