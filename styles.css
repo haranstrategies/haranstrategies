@@ -74,6 +74,38 @@ header nav a:hover {
 .nav-links a {
     margin: 10px 0;
 }
+/* Mobile Navigation Styles */
+.nav-links {
+    display: flex; /* Default behavior for larger screens */
+}
+
+/* Initially hide the navigation on smaller screens */
+@media (max-width: 768px) {
+    header nav {
+        display: none; /* Hide nav links by default */
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #1E3A8A;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: block; /* Show navbar links when hamburger is clicked */
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger i {
+        font-size: 30px;
+        color: white;
+    }
+}
 
 /* Hero Section */
 .hero {
