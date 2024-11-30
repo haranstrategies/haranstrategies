@@ -3,17 +3,16 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F5F7FA; /* Light Grey Background */
-    color: #333333; /* Dark Text Color */
+    background-color: #F5F7FA;
+    color: #333333;
 }
 
-/* Header Section (Taskbar) */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: #1E3A8A; /* Dark Blue background */
+    background-color: #1E3A8A;
     color: white;
     position: fixed;
     top: 0;
@@ -37,13 +36,13 @@ header nav a {
 }
 
 header nav a:hover {
-    background-color: #1D4ED8; /* Light Blue hover color */
+    background-color: #1D4ED8;
     border-radius: 5px;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to right, #1E3A8A, #1D4ED8); /* Gradient Background */
+    background: linear-gradient(to right, #1E3A8A, #1D4ED8);
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -71,7 +70,7 @@ header nav a:hover {
 }
 
 .hero button:hover {
-    background-color: #1C4D9D; /* Darker Blue for hover */
+    background-color: #1C4D9D;
 }
 
 /* About Us Section */
@@ -80,7 +79,7 @@ header nav a:hover {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #1E3A8A; /* Match Hero Background */
+    background-color: #1E3A8A;
     color: white;
     text-align: center;
     padding: 20px;
@@ -109,7 +108,7 @@ header nav a:hover {
     font-size: 1.2rem;
     margin-bottom: 20px;
     line-height: 1.8;
-    color: #D1D5DB; /* Light Grey for better contrast */
+    color: #D1D5DB;
 }
 
 .cta-button {
@@ -212,4 +211,90 @@ footer {
     padding: 20px;
     background-color: #1E3A8A;
     color: white;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .about-us {
+        padding: 40px 20px;
+        height: auto;
+    }
+
+    .about-content {
+        max-width: 100%;
+    }
+
+    .services h2 {
+        font-size: 2rem;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+
+    .contact form {
+        width: 100%;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .about-content .title {
+        font-size: 2rem;
+    }
+
+    .about-content .subtitle {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .contact input, .contact textarea, .contact button {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
 }
