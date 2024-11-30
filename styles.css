@@ -238,78 +238,37 @@ header nav a:hover {
 }
 
 /* Contact Section */
-/* Contact Section */
-.contact {
-    background-color: #1D4ED8;
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.contact h2 {
-    font-size: 2.5rem;
-    color: white;
-    margin-bottom: 20px;
-}
-
-.contact form {
-    max-width: 600px; /* Center form on larger screens */
-    width: 100%; /* Ensure it adjusts for mobile */
-    margin: 0 auto; /* Center horizontally */
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
+/* Contact Section Inputs */
 .contact input,
 .contact textarea {
-    width: 100%; /* Full width of the form container */
-    padding: 12px;
-    margin: 10px 0; /* Even spacing between fields */
+    width: 90%; /* Reduce width to make it smaller */
+    padding: 10px; /* Reduce padding for smaller inputs */
+    margin: 10px auto; /* Center inputs within the form */
     border-radius: 5px;
     border: 1px solid #ddd;
-    font-size: 1rem;
+    font-size: 0.9rem; /* Reduce font size for inputs */
+    display: block; /* Ensure they stay in their block layout */
     box-sizing: border-box;
 }
 
 .contact button {
-    background-color: #1E3A8A;
-    color: white;
-    padding: 12px 25px;
-    font-size: 1rem;
-    border: none;
+    width: 90%; /* Match the reduced input size */
+    font-size: 0.9rem; /* Slightly smaller font for the button */
+    padding: 10px 15px; /* Adjust button padding */
+    margin: 10px auto; /* Center button within the form */
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-    margin-top: 20px;
-    width: 100%; /* Full width for consistency */
 }
 
-.contact button:hover {
-    background-color: #163F77;
-}
-
-/* Responsive Fixes */
+/* Responsive Fixes for Mobile */
 @media (max-width: 768px) {
-    .contact {
-        padding: 30px 15px;
-    }
-
-    .contact h2 {
-        font-size: 2rem;
-        margin-bottom: 15px;
-    }
-
-    .contact form {
-        padding: 15px;
-    }
-
     .contact input,
-    .contact textarea {
-        font-size: 0.9rem;
-        padding: 10px;
+    .contact textarea,
+    .contact button {
+        font-size: 0.8rem; /* Further reduce font size on mobile */
+        padding: 8px; /* Smaller padding for compact design */
     }
+}
+
 
     .contact button {
         font-size: 0.9rem;
