@@ -238,6 +238,7 @@ header nav a:hover {
 }
 
 /* Contact Section */
+/* Contact Section */
 .contact {
     background-color: #1D4ED8;
     color: white;
@@ -252,25 +253,24 @@ header nav a:hover {
 }
 
 .contact form {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 600px; /* Center form on larger screens */
+    width: 100%; /* Ensure it adjusts for mobile */
+    margin: 0 auto; /* Center horizontally */
     padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: left; /* Ensure proper alignment inside the form */
 }
 
 .contact input,
 .contact textarea {
-    width: calc(100% - 24px); /* Proper width to stay within padding */
+    width: 100%; /* Full width of the form container */
     padding: 12px;
-    margin: 10px auto; /* Center align the fields vertically */
+    margin: 10px 0; /* Even spacing between fields */
     border-radius: 5px;
     border: 1px solid #ddd;
     font-size: 1rem;
-    box-sizing: border-box; /* Prevent content overflow */
-    display: block;
+    box-sizing: border-box;
 }
 
 .contact button {
@@ -282,15 +282,15 @@ header nav a:hover {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
-    margin: 20px auto;
-    display: block;
+    margin-top: 20px;
+    width: 100%; /* Full width for consistency */
 }
 
 .contact button:hover {
     background-color: #163F77;
 }
 
-/* Responsive Fixes for Mobile */
+/* Responsive Fixes */
 @media (max-width: 768px) {
     .contact {
         padding: 30px 15px;
@@ -309,11 +309,10 @@ header nav a:hover {
     .contact textarea {
         font-size: 0.9rem;
         padding: 10px;
-        margin-bottom: 10px;
     }
 
     .contact button {
         font-size: 0.9rem;
-        padding: 10px 20px;
+        padding: 10px 15px;
     }
 }
