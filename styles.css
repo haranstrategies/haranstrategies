@@ -239,40 +239,85 @@ header nav a:hover {
 
 /* Contact Section */
 /* Contact Section Inputs */
-/* Contact Section Background */
-.contact {
-    width: 100%; /* Ensure full width */
-    padding: 40px 20px; /* Add spacing for better appearance */
-    background-color: #1e3a8a; /* Match dark blue theme */
-    text-align: center; /* Center the text and content */
-    box-sizing: border-box;
-}
-
-/* Contact Form Container */
-.contact form {
-    max-width: 600px; /* Set a max width for the form */
-    width: 100%; /* Allow responsiveness */
-    margin: 0 auto; /* Center the form within the section */
-    background: #fff; /* White background for the form */
-    padding: 20px; /* Add inner spacing */
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    box-sizing: border-box;
-}
-
-/* Adjust Inputs and Buttons */
-.contact input,
-.contact textarea,
-.contact button {
-    width: 90%; /* Adjust to fit inside the form */
-    max-width: 500px; /* Ensure inputs don't grow too wide */
-    margin: 10px auto; /* Center align within the form */
-}
-
-/* Responsive Fixes for Small Screens */
-@media (max-width: 768px) {
-    .contact form {
-        width: 90%; /* Reduce the form's width on smaller devices */
+ .contact {
+      width: 100%;
+      padding: 40px 20px;
+      background-color: #1e3a8a;
+      text-align: center;
+      box-sizing: border-box;
     }
-}
+
+    .contact h1 {
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .contact p {
+      color: #d1d5db;
+      margin-bottom: 20px;
+    }
+
+    .contact form {
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+    }
+
+    .contact input,
+    .contact textarea,
+    .contact button {
+      width: 90%;
+      max-width: 500px;
+      margin: 10px auto;
+      padding: 12px;
+      border: 1px solid #ced4da;
+      border-radius: 8px;
+      box-sizing: border-box;
+      display: block;
+    }
+
+    .contact textarea {
+      height: 120px;
+      resize: none;
+    }
+
+    .contact button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact button:hover {
+      background-color: #333;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .form-row input {
+      flex: 1;
+      min-width: 45%;
+    }
+
+    @media (max-width: 768px) {
+      .contact form {
+        width: 90%;
+      }
+
+      .form-row input {
+        min-width: 100%;
+      }
+    }
 
