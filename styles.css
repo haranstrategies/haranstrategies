@@ -40,6 +40,41 @@ header nav a:hover {
     border-radius: 5px;
 }
 
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger i {
+    font-size: 30px;
+    color: white;
+}
+
+/* Mobile Navigation Styles */
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    display: inline-block;
+}
+
+.nav-links.active {
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #1E3A8A;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-links a {
+    margin: 10px 0;
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(to right, #1E3A8A, #1D4ED8);
@@ -222,48 +257,12 @@ footer {
     }
 
     header nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header nav a {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    .hero h2 {
-        font-size: 2.5rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .about-us {
-        padding: 40px 20px;
-        height: auto;
-    }
-
-    .about-content {
-        max-width: 100%;
-    }
-
-    .services h2 {
-        font-size: 2rem;
-    }
-
-    .service-cards {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .service-card {
+        display: none; /* Hide nav links by default */
         width: 100%;
     }
 
-    .contact form {
-        width: 100%;
+    header .hamburger {
+        display: block;
     }
 }
 
@@ -298,3 +297,4 @@ footer {
         font-size: 0.9rem;
     }
 }
+
