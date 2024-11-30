@@ -239,39 +239,40 @@ header nav a:hover {
 
 /* Contact Section */
 /* Contact Section Inputs */
-.contact input,
-.contact textarea {
-    width: 85%; /* Reduce width to make it smaller */
-    padding: 10px; /* Reduce padding for smaller inputs */
-    margin: 10px auto; /* Center inputs within the form */
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    font-size: 0.9rem; /* Reduce font size for inputs */
-    display: block; /* Ensure they stay in their block layout */
+/* Contact Section Background */
+.contact {
+    width: 100%; /* Ensure full width */
+    padding: 40px 20px; /* Add spacing for better appearance */
+    background-color: #1e3a8a; /* Match dark blue theme */
+    text-align: center; /* Center the text and content */
     box-sizing: border-box;
 }
 
+/* Contact Form Container */
+.contact form {
+    max-width: 600px; /* Set a max width for the form */
+    width: 100%; /* Allow responsiveness */
+    margin: 0 auto; /* Center the form within the section */
+    background: #fff; /* White background for the form */
+    padding: 20px; /* Add inner spacing */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    box-sizing: border-box;
+}
+
+/* Adjust Inputs and Buttons */
+.contact input,
+.contact textarea,
 .contact button {
-    width: 90%; /* Match the reduced input size */
-    font-size: 0.9rem; /* Slightly smaller font for the button */
-    padding: 10px 15px; /* Adjust button padding */
-    margin: 10px auto; /* Center button within the form */
-    border-radius: 5px;
+    width: 90%; /* Adjust to fit inside the form */
+    max-width: 500px; /* Ensure inputs don't grow too wide */
+    margin: 10px auto; /* Center align within the form */
 }
 
-/* Responsive Fixes for Mobile */
+/* Responsive Fixes for Small Screens */
 @media (max-width: 768px) {
-    .contact input,
-    .contact textarea,
-    .contact button {
-        font-size: 0.8rem; /* Further reduce font size on mobile */
-        padding: 8px; /* Smaller padding for compact design */
+    .contact form {
+        width: 90%; /* Reduce the form's width on smaller devices */
     }
 }
 
-
-    .contact button {
-        font-size: 0.9rem;
-        padding: 10px 15px;
-    }
-}
